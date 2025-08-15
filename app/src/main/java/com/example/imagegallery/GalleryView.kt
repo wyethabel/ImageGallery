@@ -25,7 +25,8 @@ fun GalleryView(onOpenCamera: () -> Unit) {
     /* Material 3 container utilized for defining the action button to
        swap to camera view and the grid utilized for the images. */
     Scaffold(
-        floatingActionButton = { FloatingActionButton(onClick = onOpenCamera) { Text("+") } }
+        floatingActionButton = { FloatingActionButton(onClick = onOpenCamera) { Text("+") } },
+        floatingActionButtonPosition = FabPosition.Center
     ) { padding ->
         LazyVerticalGrid(
             columns = GridCells.Adaptive(100.dp),

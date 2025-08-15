@@ -34,7 +34,8 @@ fun CameraView(onPhotoTaken: () -> Unit) {
                 val capture = imageCapture ?: return@FloatingActionButton
                 takePhoto(context, capture, onPhotoTaken)
             }) { Text("◯") }
-        }
+        },
+        floatingActionButtonPosition = FabPosition.Center
     ) { padding ->
         // Embeds a classic android view for Compose UI functionality.
         AndroidView(
